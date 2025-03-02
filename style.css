@@ -1,25 +1,81 @@
 .page {
   font-family: 'Cormorant Garamond';
 }
+.page__menu {
+  margin: 40px auto;
+}
+.centered-block {
+  margin: auto;
+}
+.flex-row_space_bottom {
+  margin: 60px 0;
+}
 
 .header {
   height: 95px;
   display: flex;
   max-width: 1330px;
   min-width: 1280px;
- 
 }
 
 .header__link {
-  margin: auto;
   font-size: 28px;
   text-decoration: none;
   color: #10191E;
+}
+.header__link::after {
+    content: "!";
+} 
+.content__title {
+  font-size: 34px;
+  margin: 0 0 40px;
+  text-align: center; 
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  min-height: 75px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1330px;
+  min-width: 1280px;
+}
+.menu__link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #10191E;
+  margin-right: 20px;
+}
+.menu__link_active {
+  text-decoration: underline;
 }
 
 .project {
   background-position: center;
   background-size: cover;
+}
+
+.project__overlay:hover {
+  opacity: 1;
+}
+.menu__link:last-of-type {
+  margin-right: 0;
+}
+.project__overlay { 
+    background-color: rgba(0, 0, 100, .8);
+    height: 100%;
+    width: 100%; /* растянули ссылку во весь блок */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* выровняли текст по центру средствами flex */
+    text-decoration: none; /* убрали подчеркивание  */
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box; /* задали внутренний фокус элемента, чтобы контейнер не расширялся */
+    padding: 20px; /* отступ, чтобы текст не касался краёв */
+    opacity: 0;
 }
 
 .project_name_music-album {
@@ -57,16 +113,6 @@
   object-fit: cover;
 }
 
-.menu__link {
-  font-size: 18px;
-  text-decoration: none;
-  color: #10191E;
-  margin-right: 20px;
-}
-.menu__link_active {
-  text-decoration: underline;
-}
-
 .project_name_slider {
   background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
 }
@@ -77,20 +123,10 @@
 
 .flex-row_reversed {
   flex-direction: row-reverse;
-  margin: 60px 0;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  min-height: 75px;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1330px;
-  min-width: 1280px;
   
-
 }
+
+
 
 .project_name_how-to-study {
   background-image: url(https://code.s3.yandex.net/web-code/how-to-study.png);
@@ -114,7 +150,6 @@
   justify-content: center;
   max-width: 1330px;
   min-width: 1280px;
- 
 }
 
 .footer__logo {
@@ -130,7 +165,6 @@
 .content {
   max-width: 1330px;
   min-width: 1280px;
- 
 }
 
 .project_width_m {
@@ -151,7 +185,4 @@
 }
 .project_height_s {
   height: 240px;
-}
-.centered-block {
-  margin: auto;
 }
