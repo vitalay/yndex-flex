@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" 
-  content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Портфолио Виталий Ефимовстудента Яндекс Практикума">
   <meta name="keywords" content="html, css, javascript">
   <meta name="author" content="Виталий Викторович">
@@ -13,39 +13,45 @@
   <link rel="stylesheet" href="style.css">
   <title>Портфолио</title>
 </head>
+
 <body>
-  <div class="header"> 
+  <header class="header">
     <a lang="ru" class="header-link" href="#">Vitalya Efimov</a>
-  </div>
-  <div class="menu">
+  </header>
+  <nav class="menu">
     <a class="menu-link" href="#">Первые шаги в HTML и CSS</a>
     <a class="menu-link" href="#">Библиотеки JavaScript</a>
     <a class="menu-link" href="#">Практика HTML, CSS и JavaScript</a>
-  </div>
-  <div class="flex-row">
-    <div class="project project_beginner project_music-album"></div>
-    <div class="project project_beginner project_design-principles"></div>
-  </div>
-  <div class="flex-row flex-row_reversed">
-    <div class="flex-column flex-column_reversed">
-      <div class="project project_frameworks project_p5">
-      <video class="project-video" src="https://code.s3.yandex.net/web-code/like.mp4" autoplay muted loop></video></div>
-      <div class="flex-row flex-row_frameworks-inner">
-        <div class="project project_frameworks project_slider"></div>
-        <div class="project project_frameworks project_reactive"></div>
-      
+  </nav>
+  <main class="main">
+    <section class="flex-row">
+      <div class="project project_beginner project_music-album"></div>
+      <div class="project project_beginner project_design-principles"></div>
+    </section>
+    <section class="flex-row flex-row_reversed">
+      <div class="flex-column flex-column_reversed">
+        <div class="project project_frameworks project_p5">
+          <video class="project-video" src="https://code.s3.yandex.net/web-code/like.mp4" autoplay muted loop></video>
+        </div>
+        <div class="flex-row flex-row_frameworks-inner">
+          <div class="project project_frameworks project_slider"></div>
+          <div class="project project_frameworks project_reactive"></div>
+        </div>
       </div>
-    </div>
-    <div class="project project_frameworks project_procrastinate">
-    <video class="project-video" src="https://code.s3.yandex.net/web-code/procrastinate.mov" autoplay muted loop></video></div>
-</div> 
-  <div class="flex-row">
-    <div class="project project_vanilla project_how-to-study"></div>
-    <div class="project project_vanilla project_across-russia"></div>
-    <div class="project project_vanilla project_mesto"></div>
-  </div>
-  <div class="footer">
-    <div class="logo"></div>
-  </div>
- </body>
+      <div class="project project_frameworks project_procrastinate">
+        <video class="project-video" src="https://code.s3.yandex.net/web-code/procrastinate.mov" autoplay muted
+          loop></video>
+      </div>
+    </section>
+    <section class="flex-row">
+      <div class="project project_vanilla project_how-to-study"></div>
+      <div class="project project_vanilla project_across-russia"></div>
+      <div class="project project_vanilla project_mesto"></div>
+    </section>
+    <footer class="footer">
+      <div class="logo"></div>
+  </main>
+  </footer>
+</body>
+
 </html>
